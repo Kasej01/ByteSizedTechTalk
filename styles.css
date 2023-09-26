@@ -1,0 +1,199 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #eeeeee;
+    line-height: 1.6;
+    color: #333;
+    overflow-x: hidden;
+}
+
+header {
+    background-color: #009688;
+    color: #ffffff;
+    text-align: center;
+    padding: 1.2em 0;
+    border-bottom: 5px solid #00695c;
+}
+
+nav a {
+    color: #ffffff;
+    margin: 0 15px;
+    text-decoration: none;
+    position: relative;
+    transition: color 0.5s ease;
+}
+
+nav a::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #ffffff;
+    visibility: hidden;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+nav a:hover::before {
+    visibility: visible;
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+}
+
+main {
+    max-width: 1000px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+
+article {
+    background-color: #ffffff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+h3 {
+    margin-bottom: 20px;
+}
+
+p {
+    text-align: justify;
+}
+
+audio {
+    width: calc(100% - 20px);
+    border-radius: 10px;
+    margin: 10px;
+}
+
+
+.container {
+    display: flex;
+    flex-wrap: nowrap; /* Adjust this property to make sure the aside and content are side by side */
+    align-items: stretch;
+    width: 100%;
+}
+
+aside {
+    width: 250px;
+    padding: 20px;
+    background-color: #f4f4f4;
+    box-shadow: 2px 0px 5px 0px rgba(0, 0, 0, 0.1);
+}
+
+.content {
+    flex-grow: 1;
+    padding: 20px; /* Added padding for content */
+    box-sizing: border-box; /* Adjust box-sizing to include padding in width */
+}
+
+#search-results a {
+    display: block;
+    margin-bottom: 4px; /* Optional: for a little spacing between results */
+    text-decoration: none;
+    color: black;
+}
+
+#search-section {
+    width: 25%; /* You can adjust this value */
+    min-width: 200px; /* Set a minimum width to ensure usability on smaller screens */
+    max-width: 350px; /* Set a maximum width to limit the size on larger screens */
+    box-sizing: border-box; /* Include padding and border in element's width */
+}
+
+.hidden-episode {
+    display: none;
+}
+
+#show-more-btn {
+    cursor: pointer;
+    background-color: #f0f0f0;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    /* ... Add any additional styling you desire ... */
+}
+#search-results div {
+    cursor: pointer;
+    padding: 5px 0;
+}
+
+
+/* For smaller screens */
+@media (max-width: 768px) {
+    #search-section {
+        width: 100%; /* Make search section full width on smaller screens */
+    }
+}
+
+
+
+@media (max-width: 768px) {
+    aside {
+        width: 100%;
+        box-shadow: none;
+    }
+}
+
+#search-input {
+    width: calc(100% - 20px); 
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+#search-results div {
+    margin-bottom: 10px;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+
+@media (max-width: 768px) {
+    aside {
+        width: 100%;
+        box-shadow: none;
+    }
+}
+
+@media (max-width: 768px) {
+    aside {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    #search-input {
+        width: calc(100% - 20px); 
+    }
+}
+
+
+@media (max-width: 768px) {
+    main {
+        padding: 0 10px;
+    }
+    header, nav a {
+        font-size: 0.9em;
+    }
+}
+
+@media (max-width: 480px) {
+    nav a {
+        display: block;
+        text-align: center;
+        padding: 10px;
+        border-top: 1px solid #ffffff;
+    }
+    article {
+        padding: 10px;
+        border-radius: 8px;
+    }
+}
