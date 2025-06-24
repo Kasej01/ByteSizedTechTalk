@@ -4,7 +4,7 @@ import '../styles/home.css';
 import Hero from '../components/Hero';
 import About from '../components/About';
 import Episodes from '../components/Episodes';
-// import Footer from './components/Footer';
+import Footer from '../components/Footer';
 import headphone from '/headphone_graphic.png';
 import microphone from '/microphone_graphic.png';
 
@@ -25,8 +25,8 @@ export default function HomePage() {
         <About />
         <Episodes />
       </div>
-      {/*
-      <Footer /> */}
+  
+      <Footer />
     </div>
   );
 }

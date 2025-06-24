@@ -1,0 +1,125 @@
+.footer {
+    background-color: #1f1b52;
+    color: white;
+    padding: 2rem;
+  }
+  
+  .footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .grid-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+  
+  .footer-links ul,
+  .footer-social ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-links li,
+  .footer-social li {
+    margin-bottom: 0.5rem;
+  }
+  
+  .footer-links a,
+  .footer-social a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .footer-links a:hover,
+  .footer-social a:hover {
+    text-decoration: underline;
+  }
+  
+  .footer-bottom {
+    text-align: center;
+    margin-top: 2rem;
+    color: #aaa;
+  }
+
+  .footer-media-icons {
+    margin-top: 1rem;
+  }
+  
+  .footer-media-icons h4 {
+    margin-bottom: 0.5rem;
+  }
+  
+  .media-links {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .media-links li {
+    margin-bottom: 0.5rem;
+  }
+  
+  .media-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+  }
+  
+  .media-links a:hover {
+    text-decoration: underline;
+  }
+
+  .footer-title{
+    font-size: 1.5rem;
+  }
+
+  .footer-text{
+    font-size: 1.2rem;
+  }
+
+  @media screen and (max-width:900px){
+    .grid-container{
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+        text-align: center;
+        padding: 0;
+    }
+    .footer-title{
+        font-size: 1.5rem;
+      }
+    
+      .footer-text{
+        font-size: 1.2rem;
+      }
+  }
+
+  @media screen and (max-width:600px){
+    .grid-container{
+        display: grid;
+        grid-template-rows: 1fr;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+        text-align: center;
+        padding: 0;
+    }
+    .footer-title{
+        font-size: 1.5rem;
+      }
+    
+      .footer-text{
+        font-size: 1.2rem;
+      }
+
+    .footer-links{
+        display: none;
+    }
+    .footer-brand{
+        display: none;
+    }
+  }
+  
