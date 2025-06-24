@@ -2,11 +2,11 @@ import React from 'react';
 import Navbar from '../components/Navbar';
 import '../styles/home.css';
 import Hero from '../components/Hero';
-import AboutSection from '../components/AboutSection';
+import About from '../components/About';
+import Episodes from '../components/Episodes';
+// import Footer from './components/Footer';
 import headphone from '/headphone_graphic.png';
 import microphone from '/microphone_graphic.png';
-// import Episodes from './components/Episodes';
-// import Footer from './components/Footer';
 
 export default function HomePage() {
   return (
@@ -21,9 +21,11 @@ export default function HomePage() {
       </div>
       <Navbar />
       <Hero />
-      <AboutSection />
+      <div className="bottom-half">
+        <About />
+        <Episodes />
+      </div>
       {/*
-      <Episodes />
       <Footer /> */}
     </div>
   );

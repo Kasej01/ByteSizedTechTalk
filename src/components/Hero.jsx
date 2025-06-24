@@ -19,15 +19,6 @@ export default function Hero() {
               <ul className="podcast-links">
                 <li>
                   <a
-                    href="https://podcasts.google.com/feed/your-link"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    🎧 Google Podcasts
-                  </a>
-                </li>
-                <li>
-                  <a
                     href="https://open.spotify.com/show/your-link"
                     target="_blank"
                     rel="noreferrer"

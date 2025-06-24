@@ -22,7 +22,6 @@
 .floating {
     position: absolute;
     opacity: 0.25;
-    width: 60px;
   }
 
 .headphone-1 {
@@ -49,4 +48,32 @@
   .mic-3 {
     bottom: 5%;
     right: 10%;
+  }
+
+
+  .bottom-half{
+    background-color: #2c267c;
+    clip-path: polygon(0 5vw, 100% 0, 100% 100%, 0% 100%);
+    padding: 4rem 10vw;
+    color: white;
+    position: relative;
+    z-index: 1;
+  }
+
+  @media screen and (max-width: 1000px){
+    .graphic-container{
+      position: absolute;
+      margin: 10vh 5vw 0vh 5vw;
+      width: 90vw;
+      height: 100vh;
+      img{
+          width: 10vw;
+          color: #ff7043;
+      }
+      pointer-events: none; /* ✨ This fixes it */
+      
+      .headphone{
+          color: #ff7043;
+      }
+  }
   }

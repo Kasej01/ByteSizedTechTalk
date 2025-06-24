@@ -1,0 +1,26 @@
+#episodes-container{
+    background-color: #2c267c;
+    padding: 10vh 10vw 10vh 10vw;
+    text-align: center;
+}
+
+#episodes-title{
+    color: #ff7043;
+    text-align: center;
+}
+
+#episodes-button{
+    text-align: center;
+    padding: 0.5rem 1rem;
+    font-size: 1.5rem;
+    color: white;
+    background-color: #fa8a68;
+    font-weight: 600;
+    border:none;
+    border-radius: 1rem;
+}
+
+#episodes-button:hover{
+    background-color: #ff764c;
+    font-weight: 700;
+}
