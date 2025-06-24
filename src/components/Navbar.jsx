@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import '../styles/Navbar.css';
+import 'bootstrap-icons/font/bootstrap-icons.css';
 
 export default function Navbar() {
   const [expanded, setExpanded] = useState(false);
@@ -32,9 +33,24 @@ export default function Navbar() {
             <li className="nav-item">
               <a className="nav-link" href="#contact" onClick={() => setExpanded(false)}>Contact</a>
             </li>
-            <li className="nav-item d-flex align-items-center gap-2 ms-md-3">
-              <a href="mailto:youremail@example.com" className="nav-link">✉️</a>
+            <li className="nav-item ms-md-3">
+                <a href="mailto:bytesizedtechtalk@gmail.com" className="nav-link" aria-label="Email">
+                    <i className="bi bi-envelope-fill"></i>
+                </a>
             </li>
+            <li className="nav-item">
+                <a
+                    href="https://your-podcast-link.com"
+                    target="_blank"
+                    rel="noreferrer"
+                    className="nav-link"
+                    aria-label="Podcast"
+                >
+                    <i className="bi bi-mic-fill"></i>
+                </a>
+            </li>
+
+
           </ul>
         </div>
       </div>
