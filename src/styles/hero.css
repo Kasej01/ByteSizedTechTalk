@@ -1,13 +1,10 @@
 #hero-container{
-    padding: 20vh 10vw;
+    padding: 20vh 10vw 15vh 10vw;
 }
 
 
 .hero-background {
   color: white;
-  clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
-  position: relative;
-  z-index: 1;
 }
 
 
@@ -75,7 +72,7 @@
 
   @media screen and (max-width: 1200px) {
     #hero-container{
-        padding: 12vh 5vw;
+        padding: 12vh 5vw 8vh 5vw;
     }
   }
 
@@ -131,7 +128,7 @@
         padding-top: 5vh;
     }
     #hero-container{
-        padding: 5vh 5vw;
+        padding: 5vh 5vw 3vh 5vw;
     }
     .hero-content{
         text-align: center;
