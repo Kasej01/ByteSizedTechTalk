@@ -129,6 +129,13 @@
          padding: 0;
          margin-left: 15vw;
        }
+
+    #about-container{
+        padding-bottom: 0;
+    }
+    #about-grid{
+        grid-template-rows: 1fr;
+    }
 }
 
 

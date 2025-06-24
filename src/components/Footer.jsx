@@ -4,7 +4,7 @@ import '../styles/footer.css';
 export default function Footer() {
   return (
     <footer className="footer">
-      <div className="footer-content grid-container">
+      <div className="footer-content footer-grid-container">
         {/* Branding */}
         <div className="footer-brand">
           <h3 className="footer-title">ByteSizedTech</h3>

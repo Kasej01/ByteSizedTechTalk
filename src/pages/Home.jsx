@@ -1,12 +1,13 @@
 import React from 'react';
 import Navbar from '../components/Navbar';
 import '../styles/home.css';
+import headphone from '/headphone_graphic.png';
+import microphone from '/microphone_graphic.png';
 import Hero from '../components/Hero';
 import About from '../components/About';
 import Episodes from '../components/Episodes';
 import Footer from '../components/Footer';
-import headphone from '/headphone_graphic.png';
-import microphone from '/microphone_graphic.png';
+import Questions from '../components/Questions';
 
 export default function HomePage() {
   return (
@@ -24,6 +25,7 @@ export default function HomePage() {
       <div className="bottom-half">
         <About />
         <Episodes />
+        <Questions />
       </div>
   
       <Footer />

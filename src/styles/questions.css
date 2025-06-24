@@ -1,0 +1,90 @@
+#questions-container {
+    padding: 10vh 10vw;
+    color: white;
+    text-align: center;
+  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+#questions-title{
+    color: #ff7043;
+}
+
+#questions-button{
+    text-align: center;
+    padding: 0.5rem 1rem;
+    font-size: 1.3rem;
+    color: white;
+    background-color: #fa8a68;
+    font-weight: 600;
+    border:none;
+    border-radius: 1rem;
+    text-align: center;
+}
+
+#questions-button:hover{
+    background-color: #ff764c;
+    font-weight: 700;
+}
+
+.questions-form {
+    height: auto;
+    width: auto;
+    padding: 2rem;
+    display: grid;
+    gap: 1rem;
+  
+    /* You only need 1 column for vertical stacking */
+    grid-template-columns: 30vw;
+    grid-template-rows: auto auto auto auto;
+  
+    grid-template-areas:
+      "name"
+      "email"
+      "question"
+      "submit";
+  }
+  
+
+.form-input{
+    width: auto;
+    height: 2rem;
+}
+
+.form-name{
+    grid-area: name;
+}
+
+.form-email{
+    grid-area: email;
+}
+
+.form-question{
+    grid-area: question;
+    height: 4rem;
+}
+
+.form-submit{
+    grid-area: submit;
+}
+
+@media screen and (max-width: 1400px){
+    .questions-form{
+        grid-template-columns: 50vw;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .questions-form{
+        grid-template-columns: 70vw;
+    }
+}
+
+@media screen and (min-width: 0px) and (max-width: 400px){
+    .questions-form{
+        grid-template-columns: 90vw;
+    }
+}
