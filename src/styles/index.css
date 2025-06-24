@@ -1,0 +1,17 @@
+/* Reset Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: system-ui, sans-serif;
+  background-color: #3d35a0 !important;
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 2rem;
+}
+
+html {
+  scroll-behavior: smooth;
+}
