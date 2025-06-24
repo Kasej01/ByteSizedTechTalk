@@ -25,9 +25,6 @@ export default function Navbar() {
         <div className={`collapse navbar-collapse ${expanded ? 'show' : ''}`} id="navbarContent">
           <ul className="navbar-nav ms-auto mb-2 mb-md-0">
             <li className="nav-item">
-              <a className="nav-link" href="#about" onClick={() => setExpanded(false)}>About</a>
-            </li>
-            <li className="nav-item">
               <a className="nav-link" href="#episodes" onClick={() => setExpanded(false)}>Episodes</a>
             </li>
             <li className="nav-item">

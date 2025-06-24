@@ -11,8 +11,9 @@
     color: white;
     margin-top: 5rem;
     .about-title{
-        font-size: 3.5rem;
+        font-size: 4rem;
         font-weight: 700;
+        color: #ff8c69;
     }
     .about-desc{
         font-size: 1.5rem;
@@ -131,7 +132,7 @@
 }
 
 
-@media screen and (min-width:0px) and (max-width: 570px){
+@media screen and (max-width:570px){
     .about-text{ 
         .about-title{
             font-size: 1.8rem;

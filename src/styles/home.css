@@ -2,3 +2,51 @@
     margin: 0;
     padding: 0;
 }
+
+.graphic-container{
+    position: absolute;
+    margin: 10vh 5vw 0vh 5vw;
+    width: 90vw;
+    height: 100vh;
+    img{
+        width: 5vw;
+        color: #ff7043;
+    }
+    pointer-events: none; /* ✨ This fixes it */
+    
+    .headphone{
+        color: #ff7043;
+    }
+}
+
+.floating {
+    position: absolute;
+    opacity: 0.25;
+    width: 60px;
+  }
+
+.headphone-1 {
+    top: 5%;
+    left: 10%;
+  }
+  .headphone-2 {
+    top: 40%;
+    right: 5%;
+  }
+  .headphone-3 {
+    bottom: 10%;
+    left: 50%;
+  }
+  
+  .mic-1 {
+    top: 20%;
+    right: 15%;
+  }
+  .mic-2 {
+    bottom: 20%;
+    left: 5%;
+  }
+  .mic-3 {
+    bottom: 5%;
+    right: 10%;
+  }
