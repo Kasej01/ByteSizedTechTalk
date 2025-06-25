@@ -1,5 +1,8 @@
 import React from 'react';
 import '../styles/hero.css';
+import SpotifyLogo from '/spotify_logo.png';
+import AmazonLogo from '/amazon_music_logo.png';
+import AppleLogo from '/apple_logo.png';
 
 export default function Hero() {
   return (
@@ -23,7 +26,7 @@ export default function Hero() {
                     target="_blank"
                     rel="noreferrer"
                   >
-                    🎵 Spotify
+                  <img className="social-img" src={SpotifyLogo}/>Spotify
                   </a>
                 </li>
                 <li>
@@ -32,7 +35,7 @@ export default function Hero() {
                     target="_blank"
                     rel="noreferrer"
                   >
-                    📦 Amazon Music
+                  <img className="social-img" src={AmazonLogo}/>Amazon Music
                   </a>
                 </li>
                 <li>
@@ -41,7 +44,7 @@ export default function Hero() {
                     target="_blank"
                     rel="noreferrer"
                   >
-                    🍏 Apple Podcasts
+                  <img className="social-img" src={AppleLogo}/> Apple Podcasts
                   </a>
                 </li>
               </ul>

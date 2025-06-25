@@ -24,11 +24,11 @@ export default function Navbar() {
 
         <div className={`collapse navbar-collapse ${expanded ? 'show' : ''}`} id="navbarContent">
           <ul className="navbar-nav ms-auto mb-2 mb-md-0">
+            {/* <li className="nav-item">
+              <a className="nav-link" href="/episodes" onClick={() => setExpanded(false)}>Episodes</a>
+            </li> */}
             <li className="nav-item">
-              <a className="nav-link" href="#episodes" onClick={() => setExpanded(false)}>Episodes</a>
-            </li>
-            <li className="nav-item">
-              <a className="nav-link" href="#contact" onClick={() => setExpanded(false)}>Contact</a>
+              <a className="nav-link" href="#questions-title" onClick={() => setExpanded(false)}>Contact</a>
             </li>
             <li className="nav-item ms-md-3">
                 <a href="mailto:bytesizedtechtalk@gmail.com" className="nav-link" aria-label="Email">

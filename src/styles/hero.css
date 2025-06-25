@@ -50,6 +50,11 @@
     margin-bottom: 1rem;
   }
   
+  .social-img{
+    width: 2vw;
+    margin: 1rem;
+  }
+
   .podcast-links {
     list-style: none;
     padding: 0;
@@ -144,3 +149,22 @@
         font-size: 2.5rem;
     }
   }
+
+  @media screen and (max-width: 1500px){
+    .social-img{
+        width: 5vw;
+    }
+}
+
+@media screen and (max-width: 900px){
+    .social-img{
+        width: 7vw;
+    }
+}
+
+@media screen and (max-width: 600px){
+    .social-img{
+        width: 10vw;
+        margin: 0 1rem;
+    }
+}

@@ -9,18 +9,30 @@
     text-align: center;
 }
 
-#episodes-button{
-    text-align: center;
-    padding: 0.5rem 1rem;
-    font-size: 1.5rem;
-    color: white;
-    background-color: #fa8a68;
-    font-weight: 600;
-    border:none;
-    border-radius: 1rem;
+.social-logo{
+    width: 3vw;
+    margin: 0rem 2rem;
 }
 
-#episodes-button:hover{
-    background-color: #ff764c;
-    font-weight: 700;
+.social-logo:hover{
+    scale: 1.2;
+}
+
+@media screen and (max-width: 1500px){
+    .social-logo{
+        width: 5vw;
+    }
+}
+
+@media screen and (max-width: 900px){
+    .social-logo{
+        width: 7vw;
+    }
+}
+
+@media screen and (max-width: 600px){
+    .social-logo{
+        width: 10vw;
+        margin: 0 1rem;
+    }
 }
